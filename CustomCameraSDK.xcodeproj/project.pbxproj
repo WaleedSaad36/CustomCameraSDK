@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		647442302B9D23AD001A63A3 /* CustomCameraSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6474422F2B9D23AD001A63A3 /* CustomCameraSDK.docc */; };
 		647442312B9D23AD001A63A3 /* CustomCameraSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6474422E2B9D23AD001A63A3 /* CustomCameraSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64EA2EDC2B9D268400CE8C7C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EDB2B9D268400CE8C7C /* UIVIew+Extension.swift */; };
+		64EA2EDE2B9D26B400CE8C7C /* UIAlert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EDD2B9D26B400CE8C7C /* UIAlert+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6474422B2B9D23AD001A63A3 /* CustomCameraSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomCameraSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6474422E2B9D23AD001A63A3 /* CustomCameraSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCameraSDK.h; sourceTree = "<group>"; };
 		6474422F2B9D23AD001A63A3 /* CustomCameraSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CustomCameraSDK.docc; sourceTree = "<group>"; };
+		64EA2EDB2B9D268400CE8C7C /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		64EA2EDD2B9D26B400CE8C7C /* UIAlert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +53,26 @@
 			children = (
 				6474422E2B9D23AD001A63A3 /* CustomCameraSDK.h */,
 				6474422F2B9D23AD001A63A3 /* CustomCameraSDK.docc */,
+				64EA2EE02B9D272000CE8C7C /* Utilites */,
 			);
 			path = CustomCameraSDK;
+			sourceTree = "<group>";
+		};
+		64EA2EDF2B9D270F00CE8C7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EDB2B9D268400CE8C7C /* UIVIew+Extension.swift */,
+				64EA2EDD2B9D26B400CE8C7C /* UIAlert+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64EA2EE02B9D272000CE8C7C /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EDF2B9D270F00CE8C7C /* Extensions */,
+			);
+			path = Utilites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EA2EDE2B9D26B400CE8C7C /* UIAlert+Extension.swift in Sources */,
+				64EA2EDC2B9D268400CE8C7C /* UIVIew+Extension.swift in Sources */,
 				647442302B9D23AD001A63A3 /* CustomCameraSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
