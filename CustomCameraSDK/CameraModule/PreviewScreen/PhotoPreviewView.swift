@@ -60,16 +60,29 @@ class PhotoPreviewView: UIView {
         button.tintColor = .white
         return button
     }()
-    
-    weak var delegate: PhotoPreviewDelegate?
-    weak var valifyResultDelegate: ValifyResultDelegate?
     private var photoQualityValidator: PhotoQualityValidatorProtocol = PhotoQualityValidator()
 
-
+    weak var delegate: PhotoPreviewDelegate?
+    weak var valifyResultDelegate: ValifyResultDelegate?
+    
+    
     //MARK: - initializers
     //
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+}
+
+//MARK: - UI + Actions
+//
+private extension PhotoPreviewView {
+    func setupUI() {
         addSubviews(photoImageView, cancelButton)
         
         photoImageView.makeConstraints(
@@ -131,12 +144,6 @@ class PhotoPreviewView: UIView {
         horizontalStackView.addArrangedSubview(approveButton)
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    //MARK: - Actions
-    //
     @objc private func handleCancel() {
         DispatchQueue.main.async {
             self.removeFromSuperview()
