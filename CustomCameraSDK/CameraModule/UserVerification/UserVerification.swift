@@ -7,7 +7,11 @@
 
 import UIKit
 
-public func beginVerification(from presenter: (UIViewController & ValifyResultDelegate), with style: PresentationStyle = .push, animated: Bool = true) {
+public func beginVerification(
+    from presenter: (UIViewController & ValifyResultDelegate),
+    with style: PresentationStyle = .push,
+    animated: Bool = true
+) {
   let viewController = CustomCameraController()
   viewController.valifyResultDelegat = presenter
   

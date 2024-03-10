@@ -18,11 +18,9 @@ public class VideoCaptureManager: NSObject {
     public weak var delegate: VideoCaptureManagerDelegate?
     public var fps = 15
     
-    let captureSession = AVCaptureSession()
-    let videoOutput = AVCaptureVideoDataOutput()
-    let queue = DispatchQueue(label: "com.tucan9389.camera-queue")
-
-    
+    private let captureSession = AVCaptureSession()
+    private let videoOutput = AVCaptureVideoDataOutput()
+    private let queue = DispatchQueue(label: "com.tucan9389.camera-queue")
     var lastTimestamp = CMTime()
     
     public func setUp(sessionPreset: AVCaptureSession.Preset = .vga640x480,
@@ -33,7 +31,6 @@ public class VideoCaptureManager: NSObject {
     }
     
     func setUpCamera(sessionPreset: AVCaptureSession.Preset, completion: @escaping (_ success: Bool) -> Void) {
-        
         captureSession.beginConfiguration()
         captureSession.sessionPreset = sessionPreset
         
@@ -72,8 +69,6 @@ public class VideoCaptureManager: NSObject {
             captureSession.addOutput(videoOutput)
         }
         
-        // We want the buffers to be in portrait orientation otherwise they are
-        // rotated by 90 degrees. Need to set this _after_ addOutput()!
         videoOutput.connection(with: AVMediaType.video)?.videoOrientation = .portrait
         
         captureSession.commitConfiguration()
