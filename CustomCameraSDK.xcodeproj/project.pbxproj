@@ -11,6 +11,17 @@
 		647442312B9D23AD001A63A3 /* CustomCameraSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6474422E2B9D23AD001A63A3 /* CustomCameraSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64EA2EDC2B9D268400CE8C7C /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EDB2B9D268400CE8C7C /* UIVIew+Extension.swift */; };
 		64EA2EDE2B9D26B400CE8C7C /* UIAlert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EDD2B9D26B400CE8C7C /* UIAlert+Extension.swift */; };
+		64EA2EE72B9D2D1500CE8C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2EE62B9D2D1500CE8C7C /* Assets.xcassets */; };
+		64EA2EEB2B9D36E800CE8C7C /* CustomCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EEA2B9D36E800CE8C7C /* CustomCamera.swift */; };
+		64EA2EED2B9D377300CE8C7C /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EEC2B9D377300CE8C7C /* ToastManager.swift */; };
+		64EA2EF02B9D380400CE8C7C /* VideoCaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EEF2B9D380400CE8C7C /* VideoCaptureManager.swift */; };
+		64EA2EF42B9D38B700CE8C7C /* FaceDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EF32B9D38B700CE8C7C /* FaceDetectionManager.swift */; };
+		64EA2EF62B9D38F700CE8C7C /* FaceDetectionManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EF52B9D38F700CE8C7C /* FaceDetectionManagerProtocol.swift */; };
+		64EA2EF92B9D3A1300CE8C7C /* PhotoQualityValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EF82B9D3A1300CE8C7C /* PhotoQualityValidator.swift */; };
+		64EA2EFC2B9D3A5B00CE8C7C /* PhotoQualityValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EFB2B9D3A5B00CE8C7C /* PhotoQualityValidatorProtocol.swift */; };
+		64EA2EFE2B9D3AB700CE8C7C /* PhotoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EFD2B9D3AB700CE8C7C /* PhotoPreviewView.swift */; };
+		64EA2F002B9D3B5B00CE8C7C /* ValifyResultDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2EFF2B9D3B5B00CE8C7C /* ValifyResultDelegate.swift */; };
+		64EA2F042B9D414F00CE8C7C /* UserVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EA2F032B9D414F00CE8C7C /* UserVerification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,17 @@
 		6474422F2B9D23AD001A63A3 /* CustomCameraSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CustomCameraSDK.docc; sourceTree = "<group>"; };
 		64EA2EDB2B9D268400CE8C7C /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 		64EA2EDD2B9D26B400CE8C7C /* UIAlert+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+Extension.swift"; sourceTree = "<group>"; };
+		64EA2EE62B9D2D1500CE8C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64EA2EEA2B9D36E800CE8C7C /* CustomCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCamera.swift; sourceTree = "<group>"; };
+		64EA2EEC2B9D377300CE8C7C /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		64EA2EEF2B9D380400CE8C7C /* VideoCaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureManager.swift; sourceTree = "<group>"; };
+		64EA2EF32B9D38B700CE8C7C /* FaceDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionManager.swift; sourceTree = "<group>"; };
+		64EA2EF52B9D38F700CE8C7C /* FaceDetectionManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionManagerProtocol.swift; sourceTree = "<group>"; };
+		64EA2EF82B9D3A1300CE8C7C /* PhotoQualityValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoQualityValidator.swift; sourceTree = "<group>"; };
+		64EA2EFB2B9D3A5B00CE8C7C /* PhotoQualityValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoQualityValidatorProtocol.swift; sourceTree = "<group>"; };
+		64EA2EFD2B9D3AB700CE8C7C /* PhotoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewView.swift; sourceTree = "<group>"; };
+		64EA2EFF2B9D3B5B00CE8C7C /* ValifyResultDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValifyResultDelegate.swift; sourceTree = "<group>"; };
+		64EA2F032B9D414F00CE8C7C /* UserVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 				6474422E2B9D23AD001A63A3 /* CustomCameraSDK.h */,
 				6474422F2B9D23AD001A63A3 /* CustomCameraSDK.docc */,
 				64EA2EE02B9D272000CE8C7C /* Utilites */,
+				64EA2EE52B9D2C2800CE8C7C /* CameraModule */,
+				64EA2EE62B9D2D1500CE8C7C /* Assets.xcassets */,
 			);
 			path = CustomCameraSDK;
 			sourceTree = "<group>";
@@ -71,8 +95,89 @@
 			isa = PBXGroup;
 			children = (
 				64EA2EDF2B9D270F00CE8C7C /* Extensions */,
+				64EA2EEE2B9D378B00CE8C7C /* Managers */,
 			);
 			path = Utilites;
+			sourceTree = "<group>";
+		};
+		64EA2EE52B9D2C2800CE8C7C /* CameraModule */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2F012B9D3BE400CE8C7C /* CameraScreen */,
+				64EA2F022B9D3BEE00CE8C7C /* PreviewScreen */,
+				64EA2F052B9D415500CE8C7C /* UserVerification */,
+			);
+			path = CameraModule;
+			sourceTree = "<group>";
+		};
+		64EA2EEE2B9D378B00CE8C7C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EF12B9D380900CE8C7C /* ToastView */,
+				64EA2EF22B9D386600CE8C7C /* VideoCapture */,
+				64EA2EF72B9D392D00CE8C7C /* FaceDetection */,
+				64EA2EFA2B9D3A2D00CE8C7C /* PhotoQualityValidator */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		64EA2EF12B9D380900CE8C7C /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EEC2B9D377300CE8C7C /* ToastManager.swift */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
+		64EA2EF22B9D386600CE8C7C /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EEF2B9D380400CE8C7C /* VideoCaptureManager.swift */,
+			);
+			path = VideoCapture;
+			sourceTree = "<group>";
+		};
+		64EA2EF72B9D392D00CE8C7C /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EF52B9D38F700CE8C7C /* FaceDetectionManagerProtocol.swift */,
+				64EA2EF32B9D38B700CE8C7C /* FaceDetectionManager.swift */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		64EA2EFA2B9D3A2D00CE8C7C /* PhotoQualityValidator */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EF82B9D3A1300CE8C7C /* PhotoQualityValidator.swift */,
+				64EA2EFB2B9D3A5B00CE8C7C /* PhotoQualityValidatorProtocol.swift */,
+			);
+			path = PhotoQualityValidator;
+			sourceTree = "<group>";
+		};
+		64EA2F012B9D3BE400CE8C7C /* CameraScreen */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EEA2B9D36E800CE8C7C /* CustomCamera.swift */,
+			);
+			path = CameraScreen;
+			sourceTree = "<group>";
+		};
+		64EA2F022B9D3BEE00CE8C7C /* PreviewScreen */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EFD2B9D3AB700CE8C7C /* PhotoPreviewView.swift */,
+			);
+			path = PreviewScreen;
+			sourceTree = "<group>";
+		};
+		64EA2F052B9D415500CE8C7C /* UserVerification */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2EFF2B9D3B5B00CE8C7C /* ValifyResultDelegate.swift */,
+				64EA2F032B9D414F00CE8C7C /* UserVerification.swift */,
+			);
+			path = UserVerification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EA2EE72B9D2D1500CE8C7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EA2F042B9D414F00CE8C7C /* UserVerification.swift in Sources */,
+				64EA2EF62B9D38F700CE8C7C /* FaceDetectionManagerProtocol.swift in Sources */,
+				64EA2EED2B9D377300CE8C7C /* ToastManager.swift in Sources */,
 				64EA2EDE2B9D26B400CE8C7C /* UIAlert+Extension.swift in Sources */,
+				64EA2EFE2B9D3AB700CE8C7C /* PhotoPreviewView.swift in Sources */,
+				64EA2EF02B9D380400CE8C7C /* VideoCaptureManager.swift in Sources */,
+				64EA2EEB2B9D36E800CE8C7C /* CustomCamera.swift in Sources */,
+				64EA2F002B9D3B5B00CE8C7C /* ValifyResultDelegate.swift in Sources */,
+				64EA2EF42B9D38B700CE8C7C /* FaceDetectionManager.swift in Sources */,
 				64EA2EDC2B9D268400CE8C7C /* UIVIew+Extension.swift in Sources */,
+				64EA2EF92B9D3A1300CE8C7C /* PhotoQualityValidator.swift in Sources */,
 				647442302B9D23AD001A63A3 /* CustomCameraSDK.docc in Sources */,
+				64EA2EFC2B9D3A5B00CE8C7C /* PhotoQualityValidatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
