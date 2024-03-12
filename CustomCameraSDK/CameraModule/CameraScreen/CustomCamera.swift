@@ -99,7 +99,7 @@ private extension CustomCameraController {
         case .authorized: // the user has already authorized to access the camera.
             self.setupCaptureSession()
             
-        case .notDetermined: // the user has not yet asked for camera access.
+        case .notDetermined, .denied: // the user has not yet asked for camera access.
             AVCaptureDevice.requestAccess(for: .video) { (granted) in
                 if granted { // if user has granted to access the camera.
                     print("the user has granted to access the camera")
@@ -111,10 +111,6 @@ private extension CustomCameraController {
                     self.handleDismiss()
                 }
             }
-            
-        case .denied:
-            print("the user has denied previously to access the camera.")
-            self.handleDismiss()
             
         case .restricted:
             print("the user can't give camera access due to some restriction.")

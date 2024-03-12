@@ -9,7 +9,7 @@ import UIKit
 
 public func beginVerification(
     from presenter: (UIViewController & ValifyResultDelegate),
-    with style: PresentationStyle = .push,
+    with style: PresentationStyle = .present,
     animated: Bool = true
 ) {
   let viewController = CustomCameraController()
@@ -18,8 +18,10 @@ public func beginVerification(
   switch style {
   case .push:
     presenter.navigationController?.pushViewController(viewController, animated: animated)
+      
   case .present:
-    presenter.present(UINavigationController(rootViewController: viewController), animated: animated)
+      presenter.present(viewController, animated: animated, completion: nil)
+      presenter.modalPresentationStyle = .fullScreen
   }
 }
 

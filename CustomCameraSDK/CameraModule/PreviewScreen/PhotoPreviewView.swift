@@ -167,8 +167,10 @@ private extension PhotoPreviewView {
             do {
                 try self.photoQualityValidator.validate(photo: photo)
                 self.delegate?.didTapApprovPhoto(photo: photo)
+                
             } catch PhotoQualityError.lowQuality {
                 self.showLowQualityAlert()
+                
             } catch {
                 print("Unexpected error: \(error)")
             }
