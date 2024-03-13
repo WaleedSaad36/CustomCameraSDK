@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/WaleedSaad36/CustomCameraSDK.git", :tag => spec.version.to_s }
 
   spec.source_files  = "CustomCamera/**/*.{swift}"
-  spex.swift_versions = "5.0"
+  spec.swift_versions = "5.0"
 end
